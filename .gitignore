@@ -3,7 +3,6 @@ node_modules/
 bin/
 DefinitelyTyped/
 built/
-JS/
 output/
 v8_options.txt
 typings/
