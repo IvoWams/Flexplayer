@@ -7,3 +7,4 @@ JS/
 output/
 v8_options.txt
 typings/
+package-log.json
