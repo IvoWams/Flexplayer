@@ -1,0 +1,106 @@
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Flexplayer status</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+        
+            <div class="box" style="flex-grow: 0;">
+
+                <h1>
+                    Flexplayer</h1>
+                </h1>
+
+                <p>
+                    <a href="status.html">Status</a>
+                </p>
+
+            </div>
+
+            <div class="box" style="flex-grow: 2; min-width: 500px; min-height: 150px;">
+
+                <h2>Player configuratie</h2>
+
+                <div class="container">
+
+                    <div class="inner_box" style="flex-grow: 1;">
+
+                        <label for="checkbox_wifi">Gebruik WiFi</label>
+                        <input type="checkbox" name="checkbox_wifi"/>
+
+                        <label for="input_mac">MAC</label>
+                        <input type="input" name="input_mac" readonly/>
+
+    <!--
+                        <label for="input_ssid">SSID</label>
+                        <input type="input" name="input_ssid"/>
+    -->
+                        <div id="wifi_setup" style="display: none;">
+
+                            <label for="select_ssid">Kies een netwerk</label>
+                            <div class="select" name="select_ssid"></div>
+
+                            <label for="input_password">Wachtwoord</label>
+                            <input type="password" name="input_password"/>
+
+                            <input type="button" name="button_connect" value="Verbinden"/>
+
+                            <input type="button" name="button_rescan" value="Scan"/>
+
+                        </div>
+
+                    </div>
+
+                    <div class="inner_box" style="flex-grow: 1;">
+
+                        <label for="checkbox_dhcp">DHCP</label>
+                        <input type="checkbox" name="checkbox_dhcp"/>
+
+                        <label for="input_ip">IP</label>
+                        <input type="input" name="input_ip"/>
+
+                        <label for="input_subnet">Subnet</label>
+                        <input type="input" name="input_subnet"/>
+
+                        <label for="input_gateway">Gateway</label>
+                        <input type="input" name="input_gateway"/>
+
+                        <label for="input_dns1">DNS 1</label>
+                        <input type="input" name="input_dns1"/>
+
+                        <label for="input_dns2">DNS 2</label>
+                        <input type="input" name="input_dns2"/>
+
+                        <input type="button" name="button_submit" value="Opslaan"/>
+
+                    </div>
+
+                </div>
+
+
+            </div>
+            
+
+        </div>
+
+        <div class="disclaimer">
+            &copy;2016 - Anyflex
+        </div>
+
+        <script style="text/javascript" src="/lib/jquery-3.1.0.min.js"></script>
+        <script style="text/javascript" src="/js/tools.js"></script>
+        <script style="text/javascript" src="/js/config.js"></script>
+
+        <!-- <div id="loading"></div> -->        
+
+    </body>
+</html>

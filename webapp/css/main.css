@@ -1,0 +1,244 @@
+body {
+    margin: 50px;
+    background-color: #507090;
+    background-image: url('/images/diagonal.png');
+}
+
+#loading {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    background-color: rgba(255, 255, 255, 0.5);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    cursor: wait;
+}
+
+.disclaimer {
+    position: fixed;
+    right: 5px;
+    bottom: 5px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 10pt;
+
+    display: none;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34pt;
+    font-weight: 100;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18pt;
+    font-weight: 100;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    color: #FFFFFF;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 14pt;
+    font-weight: 100;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+    color: #FFFFFF;
+}
+
+
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 17px;
+    color: #A0B0C0;
+    margin: 0px 0px 10px 0px;
+    padding: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: #F0F050;
+}
+
+div.container {
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+div.select {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+}
+
+div.option.selected {
+    background-color: rgba(255, 255, 255, 0.4) !important;
+}
+
+div.option.connected {
+    background-color: rgba(255, 255, 100, 0.4) !important;
+}
+
+div.select > div.option {
+    cursor: pointer;
+    display: block;
+
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color: #F0F0F0;
+    margin: 0px 0px 2px 0px;
+    padding: 15px;
+
+    outline: none;
+}
+
+
+div.signal_strength {
+    float: right;
+    margin-top: 2px;
+    width: 13px;
+    height: 13px;
+}
+
+div.box {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 1px;
+
+    font: 10pt Helvetica;
+    color: #F0F0F0;
+
+    background-color: rgba(100, 200, 255, 0.5);
+    margin: 10px;
+    padding: 30px;
+
+    overflow: hidden;
+}
+
+
+div.inner_box {
+    position: relative;
+    box-sizing: border-box;
+    border-radius: 1px;
+
+    font: 10pt Helvetica;
+    color: #F0F0F0;
+
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    margin-right: 50px;
+    /* padding: 10px; */
+
+    overflow: hidden;
+}
+
+div.box > div.parameter {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 17pt;
+}
+
+div.box > div.value {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+
+    font-family: 'Slabo 27px', serif;
+    font-size: 27px;
+    font-weight: bold;
+
+    color: #F0F0F0;
+}
+
+.progress {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 0%;
+    height: 100%;
+    background-color: rgba(50, 125, 255, 0.7);
+    transition: width 0.5s;
+}
+
+
+
+label {
+    display: block;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color: #F0F0F0;
+    margin: 7px 0px 0px 0px;
+}
+
+input[type=input], input[type=password], select {
+    display: block;
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color: #F0F0F0;
+    margin: 0px 0px 10px 0px;
+    padding: 8px;
+
+    outline: none;
+
+    width: 100%;
+}
+
+input[type=input]:read-only, input[type=button]:read-only {
+    background-color: transparent !important;
+    background-image: url('/images/diagonal.png') !important;
+}
+
+option {
+    background-color: #101010;
+}
+
+input[type=checkbox] {
+    display: block;
+
+    width: 17pt;
+    height: 17pt;
+
+    border: none;
+    background-color: rgba(0, 0, 0, 0.5);
+
+    margin: 0px 0px 10px 0px;
+
+    outline: none;    
+}
+
+input[type=button] {
+    display: inline;
+
+    cursor: pointer;
+
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2);
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12pt;
+    color: #101010;
+    margin: 0px 5px 0px 0px;
+    padding: 15px;
+
+    outline: none;
+}

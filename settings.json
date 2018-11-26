@@ -1,0 +1,26 @@
+{
+	"version": "1.7",
+
+	"server": "anytv.anyflex.nl",
+	"cache_folder": "cache/",
+	"device_file": "device.json",
+
+	"test": "true",
+
+	"verbosity": [
+		"debug", 
+		"diskmanager"
+	],
+
+	"network": {
+		"wired": "eth0",
+		"wireless": "wlan0"
+	},
+
+	"timers": {
+		"device_update": 30000,
+		"send_status": 30000
+	},
+
+	"support_message": "Bij technische storingen kunt u telefonisch contact opnemen met nummer\n\n+31 (0)10 - 218 02 12\n\nVia email\n\n helpdesk@optiektv.nl"
+}

@@ -1,0 +1,366 @@
+{
+    "windows": [
+        {
+            "id": "header",
+            "visible": true,
+            "position": {"left": 5, "top": 0},
+            "dimension": {"width": 40, "height": 6},
+
+            "children": [
+
+                {
+                    "type": "label",
+                    "position": {"left": 0, "top": 0},
+                    "caption": "Flexplayer configuratie"
+                },
+
+                {
+                    "type": "parameter",
+                    "position": {"left": 0, "top": 2},
+                    "dimension": {"width": 40, "height": 1},                    
+                    "indent": 5,
+                    "id": "parameter_mac",
+                    "caption": "MAC"
+                },
+
+                {
+                    "type": "parameter",
+                    "id": "parameter_disk",
+                    "position": {"left": 0, "top": 4},
+                    "dimension": {"width": 40, "height": 1},                    
+                    "indent": 6,
+                    "caption": "Disk"
+                },
+
+                {
+                    "type": "parameter",
+                    "id": "parameter_memory",
+                    "position": {"left": 0, "top": 6},
+                    "dimension": {"width": 40, "height": 1},                    
+                    "indent": 8,
+                    "caption": "Memory"
+                },
+
+                {
+                    "type": "parameter",
+                    "id": "parameter_uptime",
+                    "position": {"left": 0, "top": 8},
+                    "dimension": {"width": 40, "height": 1},                    
+                    "indent": 8,
+                    "caption": "Uptime"
+                },
+                
+
+                {
+                    "type": "checkbox",
+                    "position": {"left": 0, "top": 10},
+                    "id": "use_dhcp",
+                    "caption": "Automatisch IP verkrijgen",
+                    "bind": "Player.use_dhcp",
+                    "on_change": "use_dhcp()"
+                },
+
+                {
+                    "type": "checkbox",
+                    "position": {"left": 0, "top": 12},
+                    "id": "use_wireless",
+                    "caption": "Gebruik Wifi",
+                    "bind": "Player.use_wifi",
+                    "on_change": "use_wireless()"
+                }
+            ]
+
+        },
+
+        {
+            "id": "wifi_setup",
+            "position": { "left": 5, "top": 15 },
+            "dimension": { "width": 40, "height": 17 },
+            "children": [
+
+                {
+                    "type": "label",
+                    "position": {"left": 0, "top": 0},
+                    "dimension": {"width": 40, "height": 0},
+                    "caption": "Wifi instellingen"
+                },
+
+                {
+                    "id": "button_search_ssid",
+                    "type": "button",
+                    "position": {"left": 0, "top": 2},
+                    "dimension": {"width": 40, "height": 3},
+                    "caption": "Zoek netwerk",
+                    "on_click": "search_ssid()"
+                },
+
+                {
+                    "type": "password",
+                    "id": "ssid_password",
+                    "position": {"left": 0, "top": 6},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "Wachtwoord",
+                    "indent": 20
+                },
+
+                {
+                    "type": "button",
+                    "position": {"left": 0, "top": 8},
+                    "dimension": {"width": 40, "height": 3},
+                    "id": "button_connect_wireless",
+                    "caption": "Verbinden",
+                    "on_click": "connect_to_ssid()"
+                },
+                
+                {
+                    "type": "parameter",
+                    "id": "parameter_ssid",
+                    "position": {"left": 0, "top": 12},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "Connectie",
+                    "indent": 11,
+                    "bind": "Network.nic_wireless.connected_ssid"
+                },
+
+                {
+                    "type": "parameter",
+                    "id": "parameter_signal_strength",
+                    "position": {"left": 0, "top": 14},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "Signaalsterkte",
+                    "indent": 16,
+                    "bind": "Network.nic_wireless.connected_ssid_signal_strength"
+                },
+
+
+                {
+                    "type": "parameter",
+                    "id": "parameter_ssid_status",
+                    "position": {"left": 0, "top": 16},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "Status",
+                    "indent": 8
+                }
+            ]
+        },
+
+        {
+            "id": "wired",
+            "visible": true,
+            "position": {"left": 55, "top": 5},
+            "dimension": {"width": 40, "height": 8},
+            
+            "children": [
+
+                {
+                    "id": "wired_ip",
+                    "type": "input",
+                    "position": {"left": 0, "top": 0},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "IP",
+                    "indent": 20,
+                    "bind": "Network.nic_wired.ip"
+                },
+
+                {
+                    "id": "wired_subnet",
+                    "type": "input",
+                    "position": {"left": 0, "top": 2},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "Subnet",
+                    "indent": 20,
+                    "bind": "Network.nic_wired.subnet"
+                },
+
+                {
+                    "id": "wired_gateway",
+                    "type": "input",
+                    "position": {"left": 0, "top": 4},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "Gateway",
+                    "indent": 20,
+                    "bind": "Network.nic_wired.gateway"
+                },
+
+                {
+                    "id": "wired_dns1",
+                    "type": "input",
+                    "position": {"left": 0, "top": 6},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "DNS #1",
+                    "indent": 20,
+                    "bind": "Network.nic_wired.dns1"
+                },
+
+                {
+                    "id": "wired_dns2",
+                    "type": "input",
+                    "position": {"left": 0, "top": 8},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "DNS #2",
+                    "indent": 20,
+                    "bind": "Network.nic_wired.dns2"
+                }
+            ]
+        },
+
+        {
+            "id": "wireless",
+            "position": {"left": 55, "top": 5},
+            "dimension": {"width": 40, "height": 8},
+            
+            "children": [
+                {
+                    "id": "wireless_ip",
+                    "type": "input",
+                    "position": {"left": 0, "top": 0},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "IP",
+                    "indent": 20,
+                    "bind": "Network.nic_wireless.ip"
+                },
+
+                {
+                    "id": "wireless_subnet",
+                    "type": "input",
+                    "position": {"left": 0, "top": 2},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "Subnet",
+                    "indent": 20,
+                    "bind": "Network.nic_wireless.subnet"
+                },
+
+                {
+                    "id": "wireless_gateway",
+                    "type": "input",
+                    "position": {"left": 0, "top": 4},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "Gateway",
+                    "indent": 20,
+                    "bind": "Network.nic_wireless.gateway"
+                },
+
+                {
+                    "id": "wireless_dns1",
+                    "type": "input",
+                    "position": {"left": 0, "top": 6},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "DNS #1",
+                    "indent": 20,
+                    "bind": "Network.nic_wireless.dns1"
+                },
+
+                {
+                    "id": "wireless_dns2",
+                    "type": "input",
+                    "position": {"left": 0, "top": 8},
+                    "dimension": {"width": 40, "height": 1},
+                    "caption": "DNS #2",
+                    "indent": 20,
+                    "bind": "Network.nic_wireless.dns2"
+                }
+            ]
+        },
+
+        {
+            "id": "tv_commands",
+            "visible": true,
+            "position": {"left": 105, "top": 1},
+            "dimension": {"width": 40, "height": 12},
+            "children": [
+
+                {
+                    "position": { "left": 0, "top": 0},
+                    "dimension": { "width": 40, "height": 1},
+                    "type": "label",
+                    "caption": "TV Opties"
+                },
+
+                {
+                    "id": "input_timer_tv_on",
+                    "type": "input",
+                    "caption": "Timer TV aan",
+                    "position": { "left": 0, "top": 2 },
+                    "dimension": { "width": 40, "height": 1},
+                    "indent": 14
+                },
+
+                {
+                    "id": "input_timer_tv_off",
+                    "type": "input",
+                    "caption": "Timer TV uit",
+                    "position": { "left": 0, "top": 4 },
+                    "dimension": { "width": 40, "height": 1},
+                    "indent": 14
+                },
+
+                {
+                    "id": "button_tv_off",
+                    "type": "button",
+                    "caption": "TV Uit",
+                    "position": { "left": 0, "top": 6 },
+                    "dimension": { "width": 40, "height": 3 },
+                    "on_click": "tv_standby()"
+                },
+
+                {
+                    "id": "button_tv_mute",
+                    "type": "button",
+                    "caption": "TV Mute",
+                    "position": { "left": 0, "top": 10 },
+                    "dimension": { "width": 40, "height": 3 },
+                    "on_click": "tv_mute()"
+                }
+
+            ]
+        },
+
+
+        {
+            "id": "save_cancel",
+            "visible": true,
+            "position": {"left": 50, "top": 29},
+            "dimension": {"width": 40, "height": 3},
+            "children": [
+                {
+                    "id": "cancel",
+                    "type": "button",
+                    "caption": "Annuleren",
+                    "position": {"left": 0, "top": 0},
+                    "dimension": {"width": 19, "height": 3},
+                    "on_click": "cancel()"
+                },
+
+                {
+                    "id": "save",
+                    "type": "button",
+                    "caption": "Opslaan",
+                    "position": {"left": 20, "top": 0},
+                    "dimension": {"width": 20, "height": 3},
+                    "on_click": "save()"
+                }
+            ]
+        },
+
+        {
+            "id": "window_search_ssid",
+            "position": {"left": 5, "top": 21},
+            "dimension": {"width": 40, "height": 11},
+
+            "children": [
+                {
+                    "id": "ssid_list",
+                    "type": "list",
+                    "position": {"left": 0, "top": 0},
+                    "dimension": {"width": 40, "height": 11}
+                }
+            ]
+        },
+
+        {
+            "id": "keyboard",
+            "position": {"left": 5, "top": 40},
+            "dimension": {"width": 150, "height": 40}
+        }
+    ]
+}

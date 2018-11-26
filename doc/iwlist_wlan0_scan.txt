@@ -1,0 +1,31 @@
+wlan0     Scan completed :
+          Cell 01 - Address: 00:1D:AA:D8:E5:50
+                    Channel:13
+                    Frequency:2.472 GHz (Channel 13)
+                    Quality=61/70  Signal level=-49 dBm  
+                    Encryption key:on
+                    ESSID:"Anyflex"
+                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 9 Mb/s
+                              18 Mb/s; 36 Mb/s; 54 Mb/s
+                    Bit Rates:6 Mb/s; 12 Mb/s; 24 Mb/s; 48 Mb/s
+                    Mode:Master
+                    Extra:tsf=000000efc2eacb38
+                    Extra: Last beacon: 51950ms ago
+                    IE: Unknown: 0007416E79666C6578
+                    IE: Unknown: 010882848B961224486C
+                    IE: Unknown: 03010D
+                    IE: Unknown: 2A0100
+                    IE: Unknown: 32040C183060
+                    IE: Unknown: 2D1A6E1017FFFF000001000000000000000000000000000000000000
+                    IE: Unknown: 3D160D000600000000000000000000000000000000000000
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+                    IE: Unknown: DD180050F2020101000003A4000027A4000042435E0062322F00
+                    IE: Unknown: 0B05040024127A
+                    IE: Unknown: 4A0E14000A002C01C800140005001900
+                    IE: Unknown: DD07000C4300000000
+                    IE: Unknown: 07064E4C20010D10
+                    IE: Unknown: DDAA0050F204104A0001101044000101103B00010310470010BC329E001DD811B28601001DAAD8E550102100194472617954656B20546563686E6F6C6F67792C20436F72702E1023001D4472617954656B20576972656C6573732041636365737320506F696E74102400105669676F7232393235205365726965731042000831323334353637381054000800060050F20400011011000A4472617954656B41507310080002008C103C000101
+

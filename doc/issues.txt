@@ -1,0 +1,4 @@
+Flexplayer NodeJS Known issues
+
+- CEC Menu does not load properly; Wifi and DHCP checkboxes aren't updates after loading config
+- Config, gateway input fields are not populated properly sometimes

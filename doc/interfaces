@@ -1,0 +1,28 @@
+# IP Config template for Anyflex Flexplayer
+
+# Loopback interface
+
+auto lo
+iface lo inet loopback
+
+# Interfaces:
+# Wired = eth0
+# Wireless = wlan0
+
+auto <interface>
+allow-hotplug <interface>
+
+# DHCP
+iface <interface> inet dhcp
+
+# Static
+
+iface <interface> inet static
+    address <ip>
+    netmask <mask>
+    gateway <gateway>
+    dns-nameservers <dns1> <dns2>
+    dns-search local
+
+# If wireless
+    wpa-conf /etc/wpa_supplicant/wpa_supplicant.conf

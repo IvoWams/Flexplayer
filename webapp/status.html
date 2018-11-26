@@ -1,0 +1,64 @@
+<html>
+    <head>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Flexplayer status</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Roboto|Slabo+27px" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="css/main.css">
+
+    </head>
+
+    <body>
+
+        <div class="container">
+        
+            <div class="box" style="flex-grow: 0;">
+
+                <h1>
+                    Flexplayer</h1>
+                </h1>
+
+                <p>
+                    <a href="config.html">Instellingen</a>
+                </p>
+
+            </div>
+
+            <div class="box" style="flex-grow: 2; min-width: 500px; min-height: 150px;">
+
+                <div class="progress" name="play_progress"></div>
+                
+                <div class="parameter">
+                    Afspelen: <span name="playing"></span>
+                </div>
+
+                <div class="value" name="duration_duration"></div>
+
+            </div>
+
+            <div class="box" name="download_box" style="flex-grow: 2; min-width: 500px; min-height: 150px;">
+
+                <div class="progress" name="dl_progress"></div>
+
+                <div class="parameter">
+                    Download: <span name="download_name"></span>
+                </div>
+
+                <div class="value" name="dl_size"></div>
+
+            </div>
+
+        </div>
+
+        <div class="disclaimer">
+            &copy;2016 - Anyflex
+        </div>
+
+        <script style="text/javascript" src="/lib/jquery-3.1.0.min.js"></script>
+        <script style="text/javascript" src="/js/tools.js"></script>
+        <script style="text/javascript" src="/js/status.js"></script>
+
+    </body>
+</html>
