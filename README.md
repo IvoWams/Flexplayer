@@ -19,7 +19,7 @@ Files for the webserver to host.
 
 ## Webserver
 
-The webapp/ folder wil get hosted as a Webserver on the PI (not using Express, but a simple socket setup, as simple and lightweight as possible. See src/Web.ts).
+The webapp/ folder will be hosted by a Webserver on the PI (not using Express, but a simple socket setup, as simple and lightweight as possible. See src/Web.ts).
 
 ## Config
 
